@@ -6,14 +6,14 @@ NoneBot2 AI 智能对话插件，支持 openai兼容 API，提供多轮对话、
 
 ## 特性
 
-- 🤖 **双 API 兼容** — DeepSeek / SiliconFlow 自动检测，一键切换
-- 💬 **多轮对话** — 上下文记忆 + 会话超时管控，6 轮/24h 默认可调
-- 🎭 **人设系统** — 公开 + 隐藏人设，独立白名单，支持 WebUI 在线增删改
-- 📊 **Token 统计** — 每日用量追踪 + 费用估算，WebUI 仪表盘 14 天柱状图
-- 💰 **预算控制** — 每日消费封顶 + Token 价格自定义，白名单用户免限
-- 🔧 **全配置热管理** — `.env` 全覆盖 + WebUI 插件管理在线编辑 + config.py 兜底
-- 🖼️ **图片渲染** — PIL 生成人设预览卡 & 调用统计卡，渐变紫蓝风
-- 🚫 **黑白名单 & 封禁词** — 用户/群聊级管控，持久化 JSON 存储
+-  **双 API 兼容** — DeepSeek / SiliconFlow 自动检测，一键切换
+-  **多轮对话** — 上下文记忆 + 会话超时管控，6 轮/24h 默认可调
+-  **人设系统** — 公开 + 隐藏人设，独立白名单，支持 WebUI 在线增删改
+-  **Token 统计** — 每日用量追踪 + 费用估算，WebUI 仪表盘 14 天柱状图
+-  **预算控制** — 每日消费封顶 + Token 价格自定义，白名单用户免限
+-  **全配置热管理** — `.env` 全覆盖 + WebUI 插件管理在线编辑 + config.py 兜底
+-  **图片渲染** — PIL 生成人设预览卡 & 调用统计卡，渐变紫蓝风
+-  **黑白名单 & 封禁词** — 用户/群聊级管控，持久化 JSON 存储
 
 ## 功能
 
@@ -30,10 +30,10 @@ NoneBot2 AI 智能对话插件，支持 openai兼容 API，提供多轮对话、
 
 ### 人设预览
 
-<img src="https://raw.githubusercontent.com/sangonomiya249/nonebot-plugin-deepseek-chat/main/screenshots/persona.png" width="400" alt="人设预览">
+<img src="https://raw.githubusercontent.com/sangonomiya249/nonebot_plugin_aichat_baize/main/screenshots/persona.png" width="400" alt="人设预览">
 
 
-### WebUI Token 仪表盘
+### WebUI 人设编辑
 
 > 需安装配套 [WebUI 插件](https://github.com/sangonomiya249/nonebot_plugin_webui_baize) 才能使用管理面板、在线编辑配置和人设。
 
@@ -49,7 +49,7 @@ pip install git+https://github.com/sangonomiya249/nonebot_plugin_aichat_baize.gi
 
 ```toml
 [tool.nonebot]
-plugins = ["nonebot_plugin_deepseek_chat"]
+plugins = ["nonebot_plugin_aichat_baize"]
 ```
 
 ## 配置

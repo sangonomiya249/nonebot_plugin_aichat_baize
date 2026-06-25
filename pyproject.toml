@@ -4,17 +4,16 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "nonebot_plugin_aichat_baize"
-version = "2.0.0"
-description = "NoneBot2 AI 智能对话插件，支持 DeepSeek / SiliconFlow API，多轮对话+人设切换+Token统计"
-license = { text = "MIT" }
+version = "1.0.0"
+description = "AI对话百泽插件"
+license = "MIT"
 authors = [{ name = "Baize", email = "2491434931@qq.com" }]
 readme = "README.md"
-keywords = ["nonebot", "nonebot2", "deepseek", "siliconflow", "ai", "chat", "persona"]
+keywords = ["nonebot", "nonebot2", "ai", "chat"]
 requires-python = ">=3.10"
 dependencies = [
-  "nonebot2>=2.2.0",
-  "httpx>=0.23",
-  "Pillow>=9.0",
+    "nonebot2>=2.2.0",
+    "httpx",
 ]
 
 [project.urls]
@@ -23,3 +22,9 @@ Repository = "https://github.com/sangonomiya249/nonebot_plugin_aichat_baize"
 
 [project.entry-points."nonebot2.plugin"]
 nonebot_plugin_aichat_baize = "nonebot_plugin_aichat_baize:__plugin_meta__"
+
+# 关键配置：只识别插件包，排除截图文件夹
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["nonebot_plugin_aichat_baize"]
+exclude = ["screenshots", "screenshots/*"]

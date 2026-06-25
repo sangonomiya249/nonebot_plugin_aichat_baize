@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nonebot-plugin-deepseek-chat"
+version = "2.0.0"
+description = "NoneBot2 AI 智能对话插件，支持 DeepSeek / SiliconFlow API，多轮对话+人设切换+Token统计"
+license = { text = "MIT" }
+authors = [{ name = "Baize", email = "2491434931@qq.com" }]
+readme = "README.md"
+keywords = ["nonebot", "nonebot2", "deepseek", "siliconflow", "ai", "chat", "persona"]
+requires-python = ">=3.10"
+dependencies = [
+    "nonebot2>=2.2.0",
+    "httpx>=0.23",
+    "Pillow>=9.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/sangonomiya249/nonebot-plugin-deepseek-chat"
+Repository = "https://github.com/sangonomiya249/nonebot-plugin-deepseek-chat"
+
+[project.entry-points."nonebot2.plugin"]
+nonebot_plugin_deepseek_chat = "nonebot_plugin_deepseek_chat:__plugin_meta__"
+
+[tool.setuptools.packages.find]
+include = ["nonebot_plugin_deepseek_chat*"]

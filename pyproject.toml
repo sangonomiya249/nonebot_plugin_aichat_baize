@@ -22,7 +22,7 @@ Homepage = "https://github.com/sangonomiya249/nonebot_plugin_aichat_baize"
 Repository = "https://github.com/sangonomiya249/nonebot_plugin_aichat_baize"
 
 [project.entry-points."nonebot2.plugin"]
-nonebot_plugin_deepseek_chat = "nonebot_plugin_deepseek_chat:__plugin_meta__"
+nonebot_plugin_aichat_baize = "nonebot_plugin_aichat_baize:__plugin_meta__"
 
 [tool.setuptools.packages.find]
-include = ["nonebot_plugin_deepseek_chat*"]
+include = ["nonebot_plugin_aichat_baize*"]

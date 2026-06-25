@@ -12,9 +12,9 @@ readme = "README.md"
 keywords = ["nonebot", "nonebot2", "deepseek", "siliconflow", "ai", "chat", "persona"]
 requires-python = ">=3.10"
 dependencies = [
-    "nonebot2>=2.2.0",
-    "httpx>=0.23",
-    "Pillow>=9.0",
+  "nonebot2>=2.2.0",
+  "httpx>=0.23",
+  "Pillow>=9.0",
 ]
 
 [project.urls]
@@ -23,7 +23,3 @@ Repository = "https://github.com/sangonomiya249/nonebot_plugin_aichat_baize"
 
 [project.entry-points."nonebot2.plugin"]
 nonebot_plugin_aichat_baize = "nonebot_plugin_aichat_baize:__plugin_meta__"
-
-[tool.setuptools.packages.find]
-include = ["nonebot_plugin_aichat_baize*"]
-exclude = ["screenshots*", "examples*", "tests*", "docs*"]

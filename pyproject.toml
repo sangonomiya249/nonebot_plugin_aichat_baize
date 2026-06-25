@@ -26,3 +26,4 @@ nonebot_plugin_aichat_baize = "nonebot_plugin_aichat_baize:__plugin_meta__"
 
 [tool.setuptools.packages.find]
 include = ["nonebot_plugin_aichat_baize*"]
+exclude = ["screenshots*", "examples*", "tests*", "docs*"]
